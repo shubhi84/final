@@ -1,0 +1,430 @@
+* {
+  background-color: rgb(140, 103, 58);
+}
+
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  box-align: right;
+  width: 100%;
+  line-height: 0.5em;
+  padding-top: 1em;
+  float: right;
+}
+.title {
+  line-height: 0.5;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 4vw;
+  background-color: rgb(140, 103, 58);
+}
+.title2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 7vw;
+  text-align: center;
+  padding-bottom: 0.3em;
+}
+.nav {
+  width: 100%;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 120px;
+}
+
+.sections {
+  margin-bottom: 400px;
+}
+
+ul {
+  list-style-type: none;
+  padding-top: 1.5em;
+  padding: 0.5em;
+}
+li {
+  width: 100%;
+  line-height: 2em;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgb(209, 181, 146);
+}
+a {
+  color: black;
+  text-decoration: none;
+  background-color: rgb(209, 181, 146);
+  display: block;
+  width: 100%;
+}
+li a:hover {
+  background-color: rgb(114, 75, 4);
+  color: rgb(209, 181, 146);
+}
+
+.section {
+  display: flex inline;
+  justify-content: space-around;
+  margin: 1%;
+  padding-bottom: 3em;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 354px;
+  width: 525px;
+  padding-bottom: 3em;
+}
+.main {
+  width: 98%;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(209, 181, 146, 0.75);
+  top: 260px;
+  width: auto;
+  height: 70px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out 0.2s;
+  -ms-webkit-transition: all 0.5s ease-in-out 0.2s;
+  -o-webkit-transition: all 0.5s ease-in-out 0.2s;
+  transition: all 0.5s ease-in-out 0.2s;
+  padding-left: 20px;
+}
+.overlay:hover {
+  height: 322px;
+  top: 0px;
+}
+h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 25px;
+  background-color: rgba(255, 255, 255, 0);
+}
+.section p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.cycle-slideshow img {
+  width: 50%;
+  margin-left: 1%;
+  float: left;
+  padding-bottom: 3em;
+  transition: 0.3s;
+}
+.text {
+  width: 45%;
+  margin-left: 1.5%;
+  height: 100px;
+  float: right;
+  margin-right: 1.5%;
+  padding-top: 3em;
+}
+.text h5 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 50px;
+  display: inline;
+}
+.text p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+.footer {
+  clear: both;
+  border-top: solid black;
+  width: 100%;
+  padding-left: 1em;
+  padding-top: 1em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 25px;
+}
+
+.footer_text {
+  font-family: "Courier New", Courier, monospace;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 20px;
+  background-color: rgb(140, 103, 58);
+}
+
+.contact{
+  display: block; 
+  box-sizing: border-box;
+}
+.contact-card {
+  font-size: 20px;
+  width: 40%;
+  margin-left: 1%;
+  margin-right: 1%;
+  height: 100px;
+  float: right;
+  padding-top: 2em;
+}
+
+.contact-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  color: black;
+}
+
+.contact-card p {
+  margin: 0.4em 0;
+  color: black;
+  line-height: 1em;
+}
+.contact img{
+  width: 50%;
+  margin-left: 1%;
+  float: left;
+  padding: 1em;
+}
+
+.profile{
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+  background-color: rgba(209, 181, 146, 0.2);
+  padding: 1em;
+  border-radius: 10px;
+  padding: 2em;
+  width: 95%;
+  margin-left: 0.6%;
+}
+.profile-text{
+  display: flex;
+  gap: 1.5em;
+  background-color: transparent;
+}
+
+.profile-text h2 {
+  font-family: Georgia, serif;
+  margin-bottom: 0.5em;
+  background-color: transparent;
+  width: 20%;
+  text-align: center;
+}
+.profile-text p {
+  line-height: 1.5;
+  background-color: transparent;
+}
+
+.menu {
+  text-align: center;
+  margin: 2em 0;
+}
+.menu h2 {
+  font-size: 2.5em;
+  font-family: Georgia, serif;
+  margin-bottom: 0.5em;
+}
+.food_menu_list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  width: 98%;
+}
+.food_menu {
+  width: 98%;
+}
+.food_menu a {
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+  font-family: "Courier New", Courier, monospace;
+  width: 98%;
+}
+.food_menu a:hover {
+  background-color: rgb(114, 75, 4);
+  color: rgb(209, 181, 146);
+}
+
+.menu_title{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 35px;
+  text-align: center;
+  padding: 2em;
+}
+
+#drinks,
+#bread {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  background-color: rgba(209, 181, 146, 0.3);
+  border-radius: 10px;
+  padding: 1em;
+  gap: 1em;
+}
+.cards img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.cards .text_ {
+  flex: 1;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgba(209, 181, 146, 0);
+}
+.cards h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.5em;
+  background-color: rgba(209, 181, 146, 0);
+}
+.cards p{
+    background-color: rgba(209, 181, 146, 0);
+}
+
+
+
+.container-images img{
+  width: 30%;
+  justify-content: space-around;
+  margin: 1%;
+  display: inline;
+  border-radius: 15%;
+}
+.goals-content h3{
+  font-size: 30px;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.goals-content p{
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(209, 181, 146, 0.3);
+  padding: 2em;
+  border-radius: 10px;
+}
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
+  .section {
+    display: block;
+    border-bottom: 20vw solid rgba(255, 255, 255, 0);
+  }
+  .sections {
+    padding-bottom: 3em;
+  }
+  .one,
+  .two,
+  .three {
+    width: 100%;
+  }
+  .overlay {
+    width: 95.7%;
+    top: 450px;
+    margin-right: 1%;
+  }
+  .overlay:hover {
+    height: 599px;
+    top: 0px;
+  }
+  .cycle-slideshow img {
+    width: 98%;
+    display: block;
+    background-position: center;
+  }
+  .contact img {
+    width: 98%;
+    display: block;
+    background-position: center;
+    margin-right: 1.5%;
+  }
+  .text {
+    clear: both;
+    width: 98%;
+    padding-bottom: 6em;
+    padding-top: 15px;
+    margin-right: 1.5%;
+  }
+  .contact-card {
+    clear: both;
+    width: 98%;
+    padding-bottom: 6em;
+    padding-top: 15px;
+  }
+
+  .text h5 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 40px;
+    display: inline;
+  }
+
+  .sections {
+    margin-bottom: 10px;
+  }
+
+  .slide {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav {
+    padding-bottom: none;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .overlay {
+    top: 200px;
+    width: 93.5%;
+  }
+  .overlay:hover {
+    height: 363px;
+    top: 0px;
+  }
+}
+@media (max-width: 768px) {
+  #drinks,
+  #bread {
+    grid-template-columns: 1fr;
+  }
+  .cards {
+    flex-direction: column;
+    text-align: center;
+  }
+  .cards img {
+    width: 120px;
+    height: 120px;
+  }
+}
+@media screen and (min-width: 1001px) {
+  li {
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+  }
+  .section {
+    width: 31%;
+    float: left;
+    box-sizing: border-box;
+  }
+  .section img {
+    width: 100%;
+  }
+  .overlay {
+    top: 200px;
+  }
+  .overlay:hover {
+    height: 307px;
+  }
+  .sections {
+    padding-bottom: 3em;
+  }
+}
